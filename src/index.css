@@ -29,20 +29,11 @@ section{
   height: 100vh;
   scroll-snap-align: center;
 }
-/* section:nth-child(1){ */
-  /* background-color: #2f204e; */
-/* } */
-
-/* section:nth-child(2) { */
-  /* background-color: #462092; */
-/* } */
-
-/* section:nth-child(3) { */
-  /* background-color: #2c0b6f; */
-/* } */
-/* section:nth-child(4) { */
-  /* background-color: #9177c6; */
-/* } */
+@media(min-width: 380px) {
+  .container {
+    max-width: 440px;
+  }
+}
 
 @media(min-width: 580px) {
   .container {

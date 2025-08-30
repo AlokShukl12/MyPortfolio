@@ -167,13 +167,7 @@ const Hero = () => {
             </Suspense>
           </Canvas>
         )}
-        {/*
-        <Canvas>
-          <Suspense fallback="loading.....">
-            <Shape />
-          </Suspense>
-        </Canvas>
-        */}
+       
         <div className="hImg">
           <img src="/hero.png" alt="hero" />
         </div>

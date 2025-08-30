@@ -146,11 +146,27 @@
     left: 100%;
   }
 }
-
-
 @media (max-width: 480px) {
-  .pProgress {
-    width: 50px;
-    height: 50px;
+  .pItem {
+    flex-direction: column;
   }
+
+  .pImg {
+    width: 80%;
+  }
+
+  .pText {
+    width: 80%;
+  }
+
+  .pProgress {
+    bottom: 100px;
+    left: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .pProgress {
+    width: 40px;
+   height: 40px;
+ }
 }

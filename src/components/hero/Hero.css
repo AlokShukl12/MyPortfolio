@@ -34,9 +34,7 @@
   /* so it doesn't block interactions */
 }
 .hImg img{
-  /* width: 100%; */
-  /* height: 100%; */
-  /* object-fit: cover; */
+  
   position: relative;
     width: 500px;
     height: 500px;
@@ -348,6 +346,7 @@
      
     }
 }
+
 @media (max-width: 580px) {
   .hero {
     flex-direction: column;
@@ -356,7 +355,8 @@
     
 
   .bg {
-    height: 40%;
+    height: 60%;
+
   }
 
   .hSection {
@@ -366,11 +366,11 @@
   .hSection.left {
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 36px;
   }
 
   .hTitle {
-    font-size: 30px;
+    font-size: 48px;
   }
 
 
@@ -379,7 +379,7 @@
   }
 
   .follow{
-    display: flex;
+    display: none;
   }
   .bubbleContainer,
      .certificate {
@@ -435,3 +435,5 @@
 
   }
 }
+
+
