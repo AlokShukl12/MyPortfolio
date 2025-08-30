@@ -1,0 +1,136 @@
+.skillSection {
+  background-color: rgba(30, 30, 34, 0.187);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px;
+  margin: 0.5rem auto;
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  border-radius: 2px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+  transition: all 0.7s ease-in-out;
+  position: absolute;
+  width: 100%;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  position: relative;
+}
+
+.card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.icon {
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+.progressBar {
+  background: #334155;
+  border-radius: 6px;
+  height: 8px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progressFill {
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  height: 100%;
+  transition: width 0.8s ease-in-out;
+}
+
+.level {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.navBtn:hover {
+  background: #3b82f6;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.dots {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #475569;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background: #9333ea;
+}
+
+.activeDot {
+  background: #3b82f6;
+  transform: scale(1.2);
+}

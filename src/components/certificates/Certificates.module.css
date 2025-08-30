@@ -1,0 +1,121 @@
+
+.certSection {
+  background-color: rgba(30, 30, 34, 0.187);
+  /* slate-900 */
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 120px;
+  margin: 0.5rem auto;
+  background: linear-gradient(to right, #14b8a6, #06b6d4);
+  border-radius: 2px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 480px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.03);
+}
+
+.caption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.navBtn:hover {
+  background: #0ea5e9;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.dots {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(31, 31, 141, 0.187);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(21, 21, 190, 0.187);
+}
+
+.activeDot {
+  background: #06b6d4;
+  transform: scale(1.2);
+}
