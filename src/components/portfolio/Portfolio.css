@@ -1,3 +1,5 @@
+
+
 .portfolio {
   height: 600vh;
   position: relative;
@@ -20,6 +22,22 @@
   justify-content: center;
   gap: 100px;
 }
+
+/* .pItem:nth-child(1) {
+  background: linear-gradient(to right, #12071f, #210b3a);
+}
+.pItem:nth-child(2) {
+  background: linear-gradient(to right, #210b3a, #27084a);
+}
+.pItem:nth-child(3) {
+  background: linear-gradient(to right, #27084a, #220345);
+}
+.pItem:nth-child(4) {
+  background: linear-gradient(to right, #220345, #2a0159);
+}
+.pItem:nth-child(5) {
+  background: linear-gradient(to right, #2a0159, #12071f);
+} */
 
 /* WE'LL NOT GIVE BACKGROUND COLOR TO THE FIRST AND LAST ITEMS (to keep scrolling effect consistent) */
 .pItem:nth-child(3) {
@@ -111,62 +129,8 @@
 }
 
 @media (max-width: 768px) {
-  .pItem {
-    flex-direction: column;
-  }
-
-  .pImg {
-    width: 80%;
-  }
-  .pText {
-    width: 80%;
-  }
-
   .pProgress {
-    bottom: 100px;
-    left: 100%;
+    width: 50px;
+    height: 50px;
   }
-}
-
-@media (max-width: 580px) {
-  .pItem {
-    flex-direction: column;
-  }
-
-  .pImg {
-    width: 80%;
-  }
-  
-  .pText {
-    width: 80%;
-  }
-
-  .pProgress {
-    bottom: 100px;
-    left: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .pItem {
-    flex-direction: column;
-  }
-
-  .pImg {
-    width: 80%;
-  }
-
-  .pText {
-    width: 80%;
-  }
-
-  .pProgress {
-    bottom: 100px;
-    left: 100%;
-  }
-}
-@media (max-width: 380px) {
-  .pProgress {
-    width: 40px;
-   height: 40px;
- }
 }
