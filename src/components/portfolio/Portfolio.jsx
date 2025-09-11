@@ -16,7 +16,7 @@ const items = [
     img: "/p3.jpg",
     title: "Animated Portfolio Website",
     desc: " Developed a personal portfolio using ReactJS with smooth animations powered by Framer Motion also using Three.js. Integrated a functional contact form using EmailJS for seamless communication and user interaction.",
-    link: "https://3-d-portfolio-yxf6.vercel.app/",
+    link: "https://alokshuklaportfolio.vercel.app/",
   },
   {
     id: 3,
